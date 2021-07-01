@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/textborderpurple"
+        android:elevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_anunciosc_foto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_item_anunciosc_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:text="@string/loading"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_item_anunciosc_foto"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_item_anunciosc_servico"
+            app:layout_constraintEnd_toStartOf="@+id/txt_item_anunciosc_servico"
+            app:layout_constraintTop_toTopOf="@+id/txt_item_anunciosc_servico"
+            app:srcCompat="@drawable/icon_user" />
+
+        <ImageView
+            android:id="@+id/imgeView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_item_anunciosc_servico"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/txt_item_anunciosc_servico"
+            app:srcCompat="@drawable/icon_place" />
+
+        <TextView
+            android:id="@+id/txt_item_anunciosc_servico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/loading"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/img_item_anunciosc_foto"
+            app:layout_constraintTop_toBottomOf="@+id/txt_item_anunciosc_username" />
+
+        <Button
+            android:id="@+id/btn_perfil_pfromc_portfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="false"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Abrir"
+            android:textStyle="bold"
+            app:backgroundTint="@color/darkOrange"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_item_c_iconServico"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_item_anunciosc_servico"
+            app:layout_constraintEnd_toEndOf="@+id/btn_perfil_pfromc_portfolio"
+            app:layout_constraintTop_toTopOf="@+id/txt_item_anunciosc_servico"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_item_anunciosc_uf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/loading"
+            app:layout_constraintBottom_toBottomOf="@+id/imgeView"
+            app:layout_constraintStart_toEndOf="@+id/imgeView"
+            app:layout_constraintTop_toTopOf="@+id/imgeView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

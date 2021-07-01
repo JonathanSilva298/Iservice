@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_c"
+        android:title="Buscar"
+        android:icon="@drawable/lupinha"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+
+    <group>
+
+    <item
+        android:id="@+id/perfil_c"
+        android:title="@string/meuperfil"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/messages_c"
+        android:title="@string/messages"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/logout_c"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+</group>
+
+
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/perfil_p"
+        android:title="@string/meuperfil"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/portfolio_p"
+        android:title="@string/meu_portf_lio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/messages_p"
+        android:title="@string/messages"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/logout_p"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+
+
+
+</menu>

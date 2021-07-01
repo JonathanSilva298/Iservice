@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iservice.iservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".classes.ChatApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_iservice"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_iservice_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IService">
+        <activity android:name=".activities.profissional.PortPDescAct"
+            android:screenOrientation="portrait"
+            android:label="Descrição">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity android:name=".activities.contratante.PortPDescFromCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity android:name=".activities.contratante.PortPfromCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.PortPAct"
+            android:label="@string/meu_portf_lio"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.ADDPortAct"
+            android:label="Adicionar ao portfolio"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.PortPAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.AvalCMAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.AvalCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.AttCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.AttPAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.PerfilPfromCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.AnuncioEditAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.AnuncioDescPAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.PerfilCAct"
+            android:label="@string/meuperfil"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.PerfilPAct"
+            android:label="@string/meuperfil"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity android:name=".activities.contratante.ChatCMAct">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MessagesCAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.AnuncioDescCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.AnunciarAct"
+            android:label="Anunciar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity android:name=".activities.contratante.ChatCAct">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.MessagesCAct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.MainCAct" />
+        </activity>
+        <activity
+            android:name=".activities.contratante.MainCAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.contratante.CadCAct"
+            android:label="@string/cadastrar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.contratante.LoginCAct" />
+        </activity>
+        <activity android:name=".activities.profissional.ChatPAct">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.MessagesPAct"
+            android:label="@string/messages"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.MainPAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.MainPAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.profissional.CadPAct"
+            android:label="@string/cadastarmin"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.profissional.LoginPAct" />
+        </activity>
+        <activity
+            android:name=".activities.profissional.LoginPAct"
+            android:label="@string/login"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainAct" />
+        </activity>
+
+        <activity
+            android:name=".activities.contratante.LoginCAct"
+            android:label="@string/login"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainAct" />
+        </activity>
+
+        <activity
+            android:name=".activities.MainAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

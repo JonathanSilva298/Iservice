@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".activities.profissional.CadPAct">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500">
+
+        <EditText
+            android:id="@+id/txt_cadprofissional_nome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/textborderdarkorange"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_cadprofissional_foto" />
+
+        <EditText
+            android:id="@+id/txt_cadprofissional_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/textborderdarkorange"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cadprofissional_nome" />
+
+        <EditText
+            android:id="@+id/txt_cadprofissional_senha"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/textborderdarkorange"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/txt_cadprofissional_email"
+            app:layout_constraintStart_toStartOf="@+id/txt_cadprofissional_email"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cadprofissional_email" />
+
+        <EditText
+            android:id="@+id/txt_cadprofissional_cep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/textborderdarkorange"
+            android:gravity="center"
+            android:hint="CEP"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/txt_cadprofissional_senha"
+            app:layout_constraintStart_toStartOf="@+id/txt_cadprofissional_senha"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cadprofissional_senha" />
+
+        <EditText
+            android:id="@+id/txt_cadprofissional_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/textborderdarkorange"
+            android:gravity="center"
+            android:hint="CPF"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/txt_cadprofissional_cep"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="@+id/txt_cadprofissional_cep"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cadprofissional_cep" />
+
+        <EditText
+            android:id="@+id/txt_cadprofissional_nascimento"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/textborderdarkorange"
+            android:gravity="center"
+            android:hint="Nascimento(DD/MM/AAAA)"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cadprofissional_cpf" />
+
+        <Button
+            android:id="@+id/btn_cadprofissional_enter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="96dp"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:text="@string/cadastrar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/darkOrange"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_cadprofissional_nascimento"
+            app:layout_constraintStart_toStartOf="@+id/txt_cadprofissional_nascimento"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cadprofissional_nascimento" />
+
+        <Button
+            android:id="@+id/btn_cadprofissional_foto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/photo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/darkOrange"
+            app:cornerRadius="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_cadprofissional_foto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:civ_border_color="@color/darkOrange"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_cadprofissional_foto"
+            app:layout_constraintEnd_toEndOf="@+id/btn_cadprofissional_foto"
+            app:layout_constraintStart_toStartOf="@+id/btn_cadprofissional_foto"
+            app:layout_constraintTop_toTopOf="@+id/btn_cadprofissional_foto" />
+
+        <ProgressBar
+            android:id="@+id/progress_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_cadprofissional_enter"
+            app:layout_constraintEnd_toEndOf="@+id/btn_cadprofissional_enter"
+            app:layout_constraintStart_toStartOf="@+id/btn_cadprofissional_enter"
+            app:layout_constraintTop_toTopOf="@+id/btn_cadprofissional_enter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
